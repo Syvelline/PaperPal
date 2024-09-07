@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className={cn('min-h-screen font-sans antialiased grainy',inter.className)}>{children}</body>
+      <body className={cn('min-h-screen font-sans antialiased grainy',inter.className)}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
