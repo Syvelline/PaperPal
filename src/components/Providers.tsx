@@ -2,10 +2,7 @@
 
 import { trpc } from '@/app/_trpc/client'
 import { absoluteUrl } from '@/lib/utils'
-import {
-  QueryClient,
-  QueryClientProvider,
-} from '@tanstack/react-query'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { httpBatchLink } from '@trpc/client'
 import { PropsWithChildren, useState } from 'react'
 
